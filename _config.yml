@@ -1,9 +1,9 @@
 # main text of home
-name: John Doe
-bio: A Man who travels the world eating noodles
+name: Johan Saji
+bio: An Engineer, A Tinkerer, A Photographer, A Traveler...
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: A blog to publish my observation and finding while working in OSS
 
 # if it's an external image, update below for true
 # better with square images
@@ -16,13 +16,13 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://koppl.in/indigo
+url: https://johansaji.github.io
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
 
 # To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
+analytics-google: 'UA-131684898-1'
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
@@ -30,47 +30,47 @@ permalink: /:title/
 
 # if you don't want comments in your posts, leave categories empty
 disqus:
-  shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+  shortname: https-johansaji-github-io # enter this from your disqus account
+  categories: [blog] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
+linkedin: johansaji
+github: johansaji
+gitlab: johansaji
+email: johansaji.dev@gmail.com
+facebook: johansaji
+#twitter: mytwitter
 # google: mygoogle
-# instagram: myinstagram
+instagram: johansaji
 # pinterest: mypinterest
-# linkedin: mylinkedin
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
-# gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: medium
+#medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
 
 authors:
-    johndoe:
-        name: John Doe
-        bio: A Man who travels the world eating noodles
-        external-image: false
-        picture: assets/images/profile.jpg
-        twitter: johndoe
-    jamesfoster:
-        name: James Foster
-        bio: A Man who develops software with coffee
-        external-image: false
-        picture: assets/images/james.jpg
-        twitter: jamesfoster
+    johansaji:
+        name: Johan Saji
+        bio: An Engineer, A Tinkerer, A Maker,  A Photographer, A Traveler...
+        external-image: true
+        picture: http://gravatar.com/avatar/597442b5575f232d835973e94b4dd2d8?s=800&d=identicon
+        twitter: johansaji
+#    jamesfoster:
+#        name: James Foster
+#        bio: A Man who develops software with coffee
+#        external-image: false
+#        picture: assets/images/james.jpg
+#        twitter: jamesfoster
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
-width: normal
+width: large
 
 # if you don't need pagination, comment the *paginate* configs below
 # paginate: 5
