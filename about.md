@@ -4,43 +4,36 @@ layout: page
 ---
 ![Profile Image]({{ site.picture }})
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Working as an embedded engineer in a reputed company based in India, I am having
+extensive experience in embedded systems mostly in Multimedia domain. Worked in
+different phases of STB (Set Top Box) development for different MOS across the globe.
+Apart from the STB, I have also worked in Routers and other IoT devices.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Apart from the office work, I am a budding photographer and a maker. I have
+been working on an Linux Distro (Monk OS) for IoT enabled device. Also spends
+time with other opensource projects.</p>
 
 <h2>Skills</h2>
 
 <ul class="skill-list">
-	<li>HTML - Jade - Haml - Erb</li>
-	<li>Responsive (Mobile First)</li>
-	<li>CSS (Stylus, Sass, Less)</li>
-	<li>Css Frameworks (Bootstrap, Foundation)</li>
-	<li>Javascript (Design Patterns, Testes)</li>
-	<li>NodeJS</li>
-	<li>AngularJS - ReactJS</li>
-	<li>Grunt - Gulp - Yeoman</li>
-	<li>Git</li>
-	<li>PHP</li>
+	<li>DVB/ATSC</li>
+	<li>Networking</li>
+	<li>Multimedia</li>
+	<li>Native C/C++</li>
+	<li>Yocto</li>
 	<li>Python</li>
-	<li>MySQL - MongoDB</li>
+	<li>Shell Script</li>
+	<li>HTML</li>
+	<li>Javascript</li>
+	<li>Java</li>
+	<li>Git</li>
 	<li>Scrum and Kanban</li>
-	<li>TDD e Continuous Integration</li>
+	<li>Continuous Integration</li>
 </ul>
 
 <h2>Projects</h2>
 
 <ul>
-	<li><a href="https://github.com/">Lorem Lorem</a></li>
-	<li><a href="https://github.com/">Ipsum Dolor</a></li>
-	<li><a href="https://github.com/">Dolor Lorem</a></li>
+	<li><a href="https://github.com/emonkos">Monk OS</a></li>
+	<li><a href="https://wiki.rdkcentral.com">RDK</a></li>
 </ul>
