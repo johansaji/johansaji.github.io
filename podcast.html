@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <video id="videotag" width="320" height="240">
+            <!--             <source src="evo-fcc://localhost/com-espial-rmf:///vldms/tuner?ocap_locator=tune://modulation=8;frequency=0714000000;pgmno=814;symbol=006875000&com-espial-rmf:///vldms/tuner?ocap_locator=tune://modulation=16;frequency=0418000000;pgmno=802;symbol=006875000&com-espial-rmf:///vldms/tuner?ocap_locator=tune://modulation=16;frequency=0418000000;pgmno=806;symbol=006875000" > -->
+        </video>
+
+        <p><b>Note:</b> The autoplay attribute does not work on some mobile devices.</p>
+<script>
+console.log("JOHAN:::::>> Helloooooooooooooooooooooooooooooooooooooooooooooooooooooo");
+var v = document.getElementById("videotag");
+//v.addEventListener("seeked", function() { console.log("===> seeked event") }, true);
+v.onerror = function() {
+    console.log("JOHAN++++++++++++++++++++++++++++++++++>>Error " + v.error.code + "; details: " + v.error.message);
+}
+v.oncanplay = (event) => {
+    console.log('Video can start, but not sure it will play through.');
+};
+v.addEventListener('canplaythrough', (event) => {
+    console.log('I think I can play through the entire ' + 'video without ever having to stop to buffer.');
+});
+v.ondurationchange = (event) => {
+    console.log('Not sure why, but the duration of the video has changed.');
+};
+v.addEventListener('emptied', (event) => {
+    console.log('Uh oh. The media is empty. Did you call load()?');
+});
+v.onended = (event) => {
+    console.log('Video stopped either because 1) it was over, ' +
+        'or 2) no further data is available.');
+};
+v.addEventListener('loadeddata', (event) => {
+    v.play();
+    console.log('Yay! The readyState just increased to  ' + 
+            'HAVE_CURRENT_DATA or greater for the first time.');
+});
+v.addEventListener('loadedmetadata', (event) => {
+    console.log('The duration and dimensions ' + 'of the media and tracks are now known. ');
+});
+function handleEvent(event) {
+    console.log( `${event.type}\n`);
+}
+
+v.addEventListener('loadstart', handleEvent);
+v.addEventListener('pause', (event) => {
+    console.log('The Boolean paused property is now true. Either the ' + 
+            'pause() method was called or the autoplay attribute was toggled.');
+});
+v.addEventListener('play', (event) => {
+    console.log('The Boolean paused property is now false. Either the ' + 
+            'play() method was called or the autoplay attribute was toggled.');
+});
+v.addEventListener('progress', handleEvent);
+v.addEventListener('canplay', handleEvent);
+v.addEventListener('playing', handleEvent);
+v.addEventListener('ratechange', (event) => {
+    console.log('The playback rate changed.');
+});
+v.addEventListener('seeked', (event) => {
+    console.log('Video found the playback position it was looking for.');
+});
+v.addEventListener('seeking', (event) => {
+    console.log('Video is seeking a new position.');
+});
+v.onstalled = (event) => {
+    console.log('Failed to fetch data, but trying.');
+};
+v.onsuspend = (event) => {
+    console.log('Data loading has been suspended.');
+};
+v.ontimeupdate = (event) => {
+    console.log('The currentTime attribute has been updated. Again.');
+};
+v.onvolumechange = (event) => {
+    console.log('The volume changed.');
+};
+v.addEventListener('waiting', (event) => {
+    console.log('Video is waiting for more data.');
+});
+v.addEventListener('error', (event) => {
+    console.log('======================== error event');
+});
+    v.src = "com-espial-rmf:///vldms/tuner?ocap_locator=tune://modulation=8;frequency=0714000000;pgmno=814;symbol=006875000";
+    v.play();
+    console.log("LOADED---->>>");
+
+</script>
+
+    </body>
+</html>
+
