@@ -24,11 +24,17 @@ var videos = [
 //source.setAttribute('type', 'video/mp4');
 //source.setAttribute('src', 'https://streaming-ondemand.rtp.pt/nas2.share/h264/512x384/p6559/index.m3u8?tlm=hls&streams=p6559_3_202009162109181783.mp4.m3u8:1024');
 //source.setAttribute('src', 'https://streaming-ondemand.rtp.pt/nas2.share/h264/512x384/p6596/p6596_1_202005222153190261/master.m3u8');
+var playing = 0;
 function myFunction() {
     console.log("=======================");
+    if (playing ===0)
     source.setAttribute('src', videos[index]);
     video.appendChild(source);
     video.play();
+    playing =1 ;
+} else {                                                                     
+        console.log("DURATION = " + video.duration);                                 
+            }
     //index++;
     //if (index == videos.length)
     //    index = 0;
